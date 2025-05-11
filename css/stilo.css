@@ -1,3 +1,8 @@
+html{
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 h1 {
     color: rgb(18, 63, 21);
     font-size: 55px;
@@ -5,20 +10,31 @@ h1 {
 }
 
 body {
-    background-color: rgb(224, 236, 228);
+    background: url(../imagenes/fondo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     color: rgb(58, 90, 64);
 }
 
 .barra-principal {
-    background-color: rgb(46, 125, 50);
-    color: rgb(255, 255, 255);
+    color: rgb(58, 90, 64);
+    font-size: 20px;
     a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
+        font-size: 20px;
+        color: rgb(18, 63, 21);
+        text-decoration: none; 
+    }
+    img {
+    width: 160px;  
+    height: 55px;
     }
     a:hover {
-        color: rgb(165, 214, 167);
+        color: rgb(13, 26, 14);
         text-decoration: underline;
+        font-size: 25px;
+        transition: transform 0.8s ease;
     }
     li {
         display: inline-block;
@@ -50,20 +66,35 @@ h3 {
     }
 }
 
+video {
+    width:80%;
+    height: auto;
+}
+
 .barra-secundaria {
     color: rgb(58, 90, 64);
     ul {
-        list-style-type: none;
-        padding: 0;
+        a {
+            color: rgb(18, 63, 21);
+            text-decoration: none; 
+        }
+        a:hover {
+            color: rgb(13, 26, 14);
+            text-decoration: underline;
+            font-size: 25px;
+            transition: transform 0.8s ease;
+        }
     }
-    a {
-        color: rgb(14, 48, 16);
-        text-decoration: none;
-    }
-    a:hover {
-        color: rgb(52, 95, 56);
-        text-decoration: underline;
-    }
+}
+
+.materiales img {
+  width: 180px;
+  height: 180px;
+}
+
+.materiales img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 footer {
