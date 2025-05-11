@@ -6,9 +6,9 @@ html{
 
 .encabezado {
     max-width: 1200px;
-    width: 99%;
+    width: 100%;
     height: 50px;
-    background-color: rgba(255, 255, 255. 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -18,12 +18,15 @@ html{
     padding : 10px 10px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 8px;
     z-index: 999;
 }
 
+header{
+    left: 0;
+}
+
 .titulo {
-    padding: 10px 10px;
     max-width: 1200px;
     width: 100%;
     height: 50%;
@@ -32,6 +35,7 @@ html{
     align-items: center;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    left: 0;
 }
 .titulo img {
     max-width: 100%;
@@ -46,12 +50,10 @@ h1 {
     font-size: 55px;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
-    align-items: center;
-    margin: opx;
 }
 
 body {
-    width: 98%;
+    width: 100%;
     max-width: 1200px;
     background: url(../imagenes/fondo1.jpg);
     background-size: cover;
@@ -64,8 +66,12 @@ body {
 
 main {
     width: 100%;
-    margin-left: 25px;
     padding-top: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
 }
 
 p {
@@ -126,15 +132,24 @@ h3 a:hover {
     text-decoration: underline;
 }
 
-
+.inicio {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    left: 10px;
+}
 video {
-    width:80%;
-    height: auto;
+    width:100%;
+    height: 100%;
+    max-height: 1200px;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 
 .contenedor-productos {
     max-width: 1200px;
-    width: 98%;
+    width: 100%;
     display: inline-flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -142,8 +157,8 @@ video {
 
 .barra-secundaria {
     max-height: 100%;
-    height: 100;
-    margin: 10px;
+    height: 100%;
+    top: 8px;
     justify-content: flex-start;
     align-items: flex-start;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
@@ -168,16 +183,17 @@ video {
 
 .materiales {
     max-width: 1200px;
-    width: 98%;
+    width: 100%;
+    left: 10px;
     display: inline;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    margin: 10px;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
     padding-left: 10px;
     padding-top: 8px;
+    margin-left: 8px;
 }
 
 .materiales img {
@@ -196,12 +212,11 @@ video {
 
 footer {
     min-width: 1200px;
-    width: 98%;
+    width: 100%;
     background-color: rgb(46, 125, 50);
     color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: auto;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    left: 0;
 }
 footer a {
     color: rgb(255, 255, 255);
@@ -213,5 +228,5 @@ footer a:hover {
 }
 
 .pie-pagina {
-    margin-left: 25px;
+    left: auto;
 }
