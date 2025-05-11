@@ -3,6 +3,13 @@ html{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.encabezado {
+    display: inline-flex;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
 h1 {
     color: rgb(18, 63, 21);
     font-size: 55px;
@@ -21,14 +28,16 @@ body {
 .barra-principal {
     color: rgb(58, 90, 64);
     font-size: 20px;
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+
+    }
     a {
         font-size: 20px;
         color: rgb(18, 63, 21);
         text-decoration: none; 
-    }
-    img {
-    width: 160px;  
-    height: 55px;
     }
     a:hover {
         color: rgb(13, 26, 14);
