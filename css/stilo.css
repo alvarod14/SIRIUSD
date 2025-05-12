@@ -135,13 +135,15 @@ h3 a:hover {
 .inicio {
     max-width: 500px;
     width: 100%;
-    height: 100%;
-    max-height: 300px;
-    left: 10px;
+    height: auto;
+    margin-bottom: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding-left: 5px;
 }
 video {
     width:100%;
-    height: 100%;
+    height: auto;
     max-height: 1200px;
     box-sizing: border-box;
     padding-left: 10px;
@@ -149,7 +151,7 @@ video {
 
 .contenedor-productos {
     max-width: 1200px;
-    width: 100%;
+    width: auto;
     display: inline-flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -157,7 +159,7 @@ video {
 
 .barra-secundaria {
     max-height: 100%;
-    height: 100%;
+    height: auto;
     top: 8px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -211,12 +213,13 @@ video {
 }
 
 footer {
-    min-width: 1200px;
-    width: 100%;
+    max-width: 1200px;
+    width: auto;
     background-color: rgb(46, 125, 50);
     color: rgb(255, 255, 255);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    left: 0;
+    box-sizing: border-box;
+    padding-left: 5px;
 }
 footer a {
     color: rgb(255, 255, 255);
@@ -229,4 +232,5 @@ footer a:hover {
 
 .pie-pagina {
     left: auto;
+    right: auto;
 }
