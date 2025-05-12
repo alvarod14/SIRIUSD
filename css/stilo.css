@@ -5,9 +5,10 @@ html{
 
 
 .encabezado {
-    max-width: 1200px;
+    max-width: auto;
     width: 100%;
-    height: 50px;
+    max-height: 50px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     box-sizing: border-box;
@@ -20,6 +21,7 @@ html{
     top: 0;
     left: 8px;
     z-index: 999;
+    font-size: clamp(0.05rem, 1vw , 0.8rem);
 }
 
 header{
@@ -27,34 +29,39 @@ header{
 }
 
 .titulo {
-    max-width: 1200px;
+    max-width: auto;
     width: 100%;
-    height: 50%;
+    height: 200px;
+    max-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
     left: 0;
 }
 .titulo img {
-    max-width: 100%;
-    width: 150px;
-    height: auto;
+    max-height: auto;
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+
 }
 
 
 h1 {
     color: rgb(18, 63, 21);
     margin: 0px;
-    font-size: 55px;
+    font-size: clamp(1rem, 5vw , 3rem);
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
+    text-overflow: ellipsis;
 }
 
 body {
     width: 100%;
-    max-width: 1200px;
+    max-width: auto;
     background: url(../imagenes/fondo1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,7 +140,7 @@ h3 a:hover {
 }
 
 .inicio {
-    max-width: 500px;
+    max-width: auto;
     width: 100%;
     height: auto;
     margin-bottom: 5px;
@@ -144,14 +151,13 @@ h3 a:hover {
 video {
     width:100%;
     height: auto;
-    max-height: 1200px;
     box-sizing: border-box;
     padding-left: 10px;
 }
 
 .contenedor-productos {
-    max-width: 1200px;
-    width: auto;
+    max-width: auto;
+    width: 100%;
     display: inline-flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -184,7 +190,7 @@ video {
 }
 
 .materiales {
-    max-width: 1200px;
+    max-width: auto;
     width: 100%;
     left: 10px;
     display: inline;
@@ -213,8 +219,8 @@ video {
 }
 
 footer {
-    max-width: 1200px;
-    width: auto;
+    max-width: auto;
+    width: 100%;
     background-color: rgb(46, 125, 50);
     color: rgb(255, 255, 255);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
