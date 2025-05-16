@@ -1,5 +1,5 @@
 html{
-    font-size: 20px;
+    font-size: clamp(14px, 1.5vw, 18px);
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -9,29 +9,35 @@ html{
     width: 100%;
     max-height: 50px;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(23, 30, 21, 0.598);
     backdrop-filter: blur(10px);
     box-sizing: border-box;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding : 10px 10px;
     position: fixed;
     top: 0;
-    left: 8px;
+    left: 0px;
     z-index: 999;
+    margin-left: 8px;
     font-size: clamp(0.05rem, 1vw , 0.8rem);
 }
 
 header{
     left: 0;
+    background-image: url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+
+    color: #19261e;
 }
 
 .titulo {
     max-width: auto;
     width: 100%;
     height: 200px;
+    padding-top: 40px;
     max-height: auto;
     display: flex;
     justify-content: center;
@@ -51,7 +57,7 @@ header{
 
 
 h1 {
-    color: rgb(18, 63, 21);
+    color: #0e1310;
     margin: 0px;
     font-size: clamp(1rem, 5vw , 3rem);
     font-family: Arial, Helvetica, sans-serif;
@@ -62,13 +68,10 @@ h1 {
 body {
     width: 100%;
     max-width: auto;
-    background: url(../imagenes/fondo1.jpg);
+    background-image: url(../imagenes/fondo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    padding-top: 55px;
-    color: rgb(58, 90, 64);
+    color: #111827;
 }
 
 main {
@@ -79,14 +82,17 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 15px;
+    background-color: rgba(237, 231, 231, 0.2);
+    backdrop-filter: blur(2px);
 }
 
 p {
     width: 100%;
+    font-size: clamp(0.5rem, 2.5vw , 1.5rem);
 }
 
 .barra-principal {
-    color: rgb(58, 90, 64);
+    color: #19261e;
     justify-content: center; 
     align-items: center;
 }
@@ -98,13 +104,13 @@ p {
 }
 .barra-principal a {
     font-size: 20px;
-    color: rgb(18, 63, 21);
+    color: #C8A951;
     text-decoration: none; 
 }
 .barra-principal a:hover {
-    color: rgb(13, 26, 14);
+    color: #19261e;
     text-decoration: underline;
-    font-size: 25px;
+    font-size: 30px;
     transition: transform 0.8s ease;
 }
 .barra-principal li {
@@ -114,28 +120,30 @@ p {
 
 h2 {
     margin: 0px;
-    color: rgb(58, 90, 64);
+    color: #072312;
+    font-size: clamp(0.8rem, 3.5vw , 2rem);
 }
 h2 a {
-    color: rgb(58, 90, 64);
+    color: #19261e;
     text-decoration: none;
 }
 h2 a:hover {
-    color: rgb(38, 51, 39);
+    color: #B28D32;
     text-decoration: underline;
     font-size: 34px;
 }
 
 h3 {
-    color: rgb(58, 90, 64);
+    font-size: clamp(0.65rem, 3vw , 1.75rem);
+    color: #0e3e21;
     margin: 0px;
 }
 h3 a {
-    color: rgb(255, 255, 255);
+    color: #C8A951;
     text-decoration: none;
 }
 h3 a:hover {
-    color: rgb(38, 51, 39);
+    color: #B28D32;
     text-decoration: underline;
 }
 
@@ -179,11 +187,11 @@ video {
     margin: 5px;
 }
 .barra-secundaria a {
-    color: rgb(13, 26, 14);
+    color: #19261e;
     text-decoration: none;
 }
 .barra-secundaria a:hover {
-    color: rgb(13, 26, 14);
+    color: #014D33;
     text-decoration: underline;
     font-size: 25px;
     transition: transform 0.8s ease;
@@ -221,21 +229,25 @@ video {
 footer {
     max-width: auto;
     width: 100%;
-    background-color: rgb(46, 125, 50);
-    color: rgb(255, 255, 255);
+    color: #19261e;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     box-sizing: border-box;
     padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 footer a {
-    color: rgb(255, 255, 255);
+    color: #0d0e0d;
     text-decoration: none;
 }
 footer a:hover {
-    color: rgb(165, 214, 167);
+    color: #B28D32;
     text-decoration: underline;
+    font-size: 28px;
 }
-
+footer p {
+    margin: 0px;
+}
 .pie-pagina {
     left: auto;
     right: auto;
